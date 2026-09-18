@@ -1,15 +1,15 @@
-const toggleButton = document.getElementById("theme-toggle");
+const themeButton = document.getElementById("theme-toggle");
 const savedTheme = localStorage.getItem("theme");
 
 function updateThemeIcon() {
   if (document.body.classList.contains("dark-mode")) {
-    toggleButton.textContent = "☀️";
-    toggleButton.setAttribute("aria-label", "Switch to light mode");
-    toggleButton.setAttribute("title", "Switch to light mode");
+    themeButton.textContent = "☀️";
+    themeButton.setAttribute("aria-label", "Switch to light mode");
+    themeButton.setAttribute("title", "Switch to light mode");
   } else {
-    toggleButton.textContent = "🌙";
-    toggleButton.setAttribute("aria-label", "Switch to dark mode");
-    toggleButton.setAttribute("title", "Switch to dark mode");
+    themeButton.textContent = "🌙";
+    themeButton.setAttribute("aria-label", "Switch to dark mode");
+    themeButton.setAttribute("title", "Switch to dark mode");
   }
 }
 
@@ -19,7 +19,7 @@ if (savedTheme === "dark") {
 
 updateThemeIcon();
 
-toggleButton.addEventListener("click", function () {
+themeButton.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
 
   if (document.body.classList.contains("dark-mode")) {
@@ -31,15 +31,15 @@ toggleButton.addEventListener("click", function () {
   updateThemeIcon();
 });
 
-const tabButtons = document.querySelectorAll(".tab-button");
+const navButtons = document.querySelectorAll(".nav-button");
 const tabContents = document.querySelectorAll(".tab-content");
 
-tabButtons.forEach(function (button) {
+navButtons.forEach(function (button) {
   button.addEventListener("click", function () {
     const targetTab = button.dataset.tab;
 
-    tabButtons.forEach(function (btn) {
-      btn.classList.remove("active");
+    navButtons.forEach(function (navButton) {
+      navButton.classList.remove("active");
     });
 
     tabContents.forEach(function (content) {
