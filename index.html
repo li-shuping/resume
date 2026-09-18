@@ -9,20 +9,24 @@
 
 <body>
 
-<button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-  🌙
-</button>
+<header class="top-nav">
+  <button class="nav-button active" data-tab="profile">Profile</button>
+  <button class="nav-button" data-tab="publications">Publications</button>
+  <a class="nav-link" href="Shuping_Li_CV_academic.pdf">CV</a>
+  <button id="theme-toggle" class="theme-button" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+</header>
 
-<nav class="tabs">
-  <button class="tab-button active" data-tab="profile">Profile</button>
-  <button class="tab-button" data-tab="publications">Publications</button>
-</nav>
+<main>
 
 <section id="profile" class="tab-content active">
 
-<h1>Shuping Li</h1>
+<h1>About me</h1>
 
-<h2>Ph.D. Candidate | Functional Genomics | Immunology | Single-Cell & Computational Genomics</h2>
+<h2>Shuping Li</h2>
+
+<p class="subtitle">
+Ph.D. Candidate | Functional Genomics | Immunology | Single-Cell & Computational Genomics
+</p>
 
 <p>
 I am a Ph.D. candidate in Physiology at the University of Oklahoma Health Campus,
@@ -70,12 +74,6 @@ mechanisms controlling immune gene expression.
 <li>Molecular biology: PCR/qPCR, Western blot, ELISA, immunofluorescence, flow cytometry</li>
 <li>Cell and animal models: mammalian cell culture, 3D oncosphere assays, mouse breeding and genotyping</li>
 </ul>
-
-<h2>Academic CV</h2>
-
-<p>
-<a href="Shuping_Li_CV_academic.pdf">Download Academic CV PDF</a>
-</p>
 
 <h2>Links</h2>
 
@@ -202,6 +200,8 @@ Association of PTPN22-C1858T Polymorphism With Susceptibility to Mycobacterium t
 </ol>
 
 </section>
+
+</main>
 
 <script src="script.js"></script>
 
