@@ -34,15 +34,18 @@ body {
 }
 
 #theme-toggle {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
-  padding: 8px 14px;
+  width: 42px;
+  height: 42px;
   border: 1px solid var(--button-border);
-  border-radius: 6px;
+  border-radius: 50%;
   background: var(--button-bg);
   color: var(--button-text);
-  font-size: 14px;
+  font-size: 20px;
   cursor: pointer;
 }
 
