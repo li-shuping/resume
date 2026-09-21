@@ -125,7 +125,7 @@ h1 {
   margin: 0 0 32px;
   color: var(--heading);
   font-size: 27px;
-  line-height: 1.62;
+  line-height: 1.8;
   font-weight: 800;
 }
 
@@ -172,7 +172,7 @@ li:last-child {
 
 #publications li {
   margin-bottom: 18px;
-  line-height: 1.65;
+  line-height: 2;
 }
 
 .own-name {
