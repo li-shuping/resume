@@ -125,7 +125,7 @@ h1 {
   margin: 0 0 32px;
   color: var(--heading);
   font-size: 27px;
-  line-height: 1.8;
+  line-height: 2;
   font-weight: 800;
 }
 
@@ -135,14 +135,14 @@ h2 {
   border-bottom: 1px solid var(--border);
   color: var(--accent);
   font-size: 31px;
-  line-height: 1.2;
+  line-height: 1.5;
   font-weight: 800;
 }
 
 p {
   margin: 0 0 24px;
   font-size: 21px;
-  line-height: 1.62;
+  line-height: 2;
 }
 
 a {
@@ -163,7 +163,7 @@ ol {
 li {
   margin-bottom: 10px;
   font-size: 21px;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 li:last-child {
