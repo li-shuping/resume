@@ -117,7 +117,7 @@ h1 {
   margin: 0 0 24px;
   color: var(--heading);
   font-size: 46px;
-  line-height: 1.08;
+  line-height: 2;
   font-weight: 800;
 }
 
@@ -135,7 +135,7 @@ h2 {
   border-bottom: 1px solid var(--border);
   color: var(--accent);
   font-size: 31px;
-  line-height: 1.5;
+  line-height: 2;
   font-weight: 800;
 }
 
